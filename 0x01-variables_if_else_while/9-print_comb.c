@@ -11,22 +11,23 @@ int main(void)
 {
 	int i;
 
-	for (i = 48; i < 58; i++)
+	for (i = '0'; i <= '9'; i++)
 
 	{
 		putchar(i);
-	}
 
-	for (i = 'a'; i <= 'f'; i++)
+		if (i <= '8')
 
-	{
-		putchar(i);
+		{
+			putchar(',');
+
+			putchar(' ');
+		}
+
 	}
 
 	putchar('\n');
-	
+
 	return(0);
 
 }
-
-
